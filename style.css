@@ -2,10 +2,11 @@
     padding: 10px;
     font-size: 16px;
 }
-.header :hover .content{
-    display: block;
-}
 
 .content{
     display: none;
+}
+
+.header :hover .content{
+    display: block;
 }
