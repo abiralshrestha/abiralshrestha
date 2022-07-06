@@ -1,3 +1,7 @@
+.container{
+    padding: 10px;
+    font-size: 16px;
+}
 .header :hover .content{
     display: block;
 }
