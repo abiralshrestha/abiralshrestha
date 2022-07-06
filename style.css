@@ -1,6 +1,13 @@
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 18px;
+    height: 100%;
+}
+
 .container{
     padding: 10px;
-    font-size: 16px;
     position: relative;
     display: inline-block;
     position: absolute;
