@@ -1,57 +1,493 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="main-container">
+        <!-- side-nav wrapper for nav since nav is fixed -->
+        <div class="side-nav"> 
+            <div class="nav">
+                <div class="brand">Nihongo&emsp;&emsp;&emsp;&nbsp;&#9776;</div>
+                <div class="accordion">
+                    <label for="item1">
+                        <div class="button">Basics &#9207</div>
+                    </label>
+                    <input type="checkbox" id="item1" hidden>
+                    <div class="content">
+                        <div class="inner">
+                            <div><a href="index.html#hiragana">Hiragana</a></div>
+                            <div><a href="index.html#katakana">Katakana</a></div>
+                            <div><a href="index.html#kanji">Kanji</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <label for="item2">
+                        <div class="button">Vocabulary &#9207</div>
+                    </label>
+                    <input type="checkbox" id="item2" hidden>
+                    <div class="content">
+                        <div class="inner">
+                            <div>Lesson 1</div>
+                            <div>Lesson 2</div>
+                            <div>Lesson 3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <label for="item3">
+                        <div class="button">Kanji &#9207</div>
+                    </label>
+                    <input type="checkbox" id="item3" hidden>
+                    <div class="content">
+                        <div class="inner">
+                            <div>Part 1</div>
+                            <div>Part 2</div>
+                            <div>Part 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<h2>Hoverable Dropdown</h2>
-<p>Move the mouse over the button to open the dropdown menu.</p>
+        <!-- Main content wrapper -->
+        <div class="expanse">
+            <!-- Main content -->
+            <div class="container">
+                <h1>Hello</h1>
+                <p>
+                    Nihongo is collection of all the things I have learned on my Japanese language
+                    journey so far. Which isn't much but I will be trying my best update the
+                    contents along the way. Feel free to peruse this poorly written "website" ;)
+                </p>
 
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
+                <!-- 1st block -->
+                <div class="block">
+                    <h2>Kana</h2>
+                    <p>
+                        Japanese alphabets are divided into three types.
+                    </p>
+                    <p>
+                        Hiragana, Katakana and Kanji.
+                        <a href="#hiragana">Hiragana</a> are native Japanese alphabets, they don't have meaning in on
+                        themeselves and are used to write native words. <a href="#katakana">Katakana</a> are
+                        phonetically
+                        similar to Hiraganas but are written differently. They are used to write
+                        loan words. <a href="#kanji">Kanji</a> are characters borrowed from the Chinese language.
+                        A single kanji represents an idea/meaning as a whole. They are often derived
+                        from pictures or painting of the thing they represent.
+                    </p>
+                    <p>
+                        Let us begin by learning the Hiragana.
+                    </p>
+                </div>
+
+                <!-- 2nd block -->
+                <div class="block" id="hiragana">
+                    <ul>
+                        <li>
+                            <h3>Hiragana</h3>
+                        </li>
+                    </ul>
+                    <div><input type="checkbox" id="tgl-hrmj" class="m-l" onclick="seer()">Show/hide Romaji</div>
+                    <table id="h-tbl">
+                        <tr>
+                            <td></td>
+                            <td>あ</td>
+                            <td>い</td>
+                            <td>う</td>
+                            <td>え</td>
+                            <td>お</td>
+                        </tr>
+                        <tr>
+                            <td>Vowels</td>
+                            <td>a</td>
+                            <td>i</td>
+                            <td>u</td>
+                            <td>e</td>
+                            <td>o</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>か</td>
+                            <td>き</td>
+                            <td>く</td>
+                            <td>け</td>
+                            <td>こ</td>
+                        </tr>
+                        <tr>
+                            <td>k-line</td>
+                            <td>ka</td>
+                            <td>ki</td>
+                            <td>ku</td>
+                            <td>ke</td>
+                            <td>ko</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>さ</td>
+                            <td>し</td>
+                            <td>す</td>
+                            <td>せ</td>
+                            <td>そ</td>
+                        </tr>
+                        <tr>
+                            <td>s-line</td>
+                            <td>sa</td>
+                            <td>shi</td>
+                            <td>su</td>
+                            <td>se</td>
+                            <td>so</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>た</td>
+                            <td>ち</td>
+                            <td>つ</td>
+                            <td>て</td>
+                            <td>と</td>
+                        </tr>
+                        <tr>
+                            <td>t-line</td>
+                            <td>ta</td>
+                            <td>chi</td>
+                            <td>tsu</td>
+                            <td>te</td>
+                            <td>to</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>な</td>
+                            <td>に</td>
+                            <td>ぬ</td>
+                            <td>ね</td>
+                            <td>の</td>
+                        </tr>
+                        <tr>
+                            <td>n-line</td>
+                            <td>na</td>
+                            <td>ni</td>
+                            <td>nu</td>
+                            <td>ne</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>は</td>
+                            <td>ひ</td>
+                            <td>ふ</td>
+                            <td>へ</td>
+                            <td>ほ</td>
+                        </tr>
+                        <tr>
+                            <td>h-line</td>
+                            <td>ha</td>
+                            <td>hi</td>
+                            <td>fu</td>
+                            <td>he</td>
+                            <td>ho</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ま</td>
+                            <td>み</td>
+                            <td>む</td>
+                            <td>め</td>
+                            <td>も</td>
+                        </tr>
+                        <tr>
+                            <td>m-line</td>
+                            <td>ma</td>
+                            <td>mi</td>
+                            <td>mu</td>
+                            <td>me</td>
+                            <td>mo</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>や</td>
+                            <td></td>
+                            <td>ゆ</td>
+                            <td></td>
+                            <td>よ</td>
+                        </tr>
+                        <tr>
+                            <td>y-line</td>
+                            <td>ya</td>
+                            <td></td>
+                            <td>yu</td>
+                            <td></td>
+                            <td>yo</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ら</td>
+                            <td>り</td>
+                            <td>る</td>
+                            <td>れ</td>
+                            <td>ろ</td>
+                        </tr>
+                        <tr>
+                            <td>r-line</td>
+                            <td>ra</td>
+                            <td>ri</td>
+                            <td>ru</td>
+                            <td>re</td>
+                            <td>ro</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>わ</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>を</td>
+                        </tr>
+                        <tr>
+                            <td>w-line</td>
+                            <td>wa</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>wo</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ん</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>n</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- 3rd block -->
+                <div class="block" id="katakana">
+                    <ul>
+                        <li>
+                            <h3>Katakana</h3>
+                        </li>
+                    </ul>
+                    <div><input type="checkbox" id="tgl-krmj" class="m-l" onclick="seer()">Show/hide Romaji</div>
+                    <table id="k-tbl">
+                        <tr>
+                            <td></td>
+                            <td>ア</td>
+                            <td>イ</td>
+                            <td>ウ</td>
+                            <td>エ</td>
+                            <td>オ</td>
+                        </tr>
+                        <tr>
+                            <td>Vowels</td>
+                            <td>a</td>
+                            <td>i</td>
+                            <td>u</td>
+                            <td>e</td>
+                            <td>o</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>カ</td>
+                            <td>キ</td>
+                            <td>ク</td>
+                            <td>ケ</td>
+                            <td>コ</td>
+                        </tr>
+                        <tr>
+                            <td>k-line</td>
+                            <td>ka</td>
+                            <td>ki</td>
+                            <td>ku</td>
+                            <td>ke</td>
+                            <td>ko</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>サ</td>
+                            <td>シ</td>
+                            <td>ス</td>
+                            <td>セ</td>
+                            <td>ソ</td>
+                        </tr>
+                        <tr>
+                            <td>s-line</td>
+                            <td>sa</td>
+                            <td>shi</td>
+                            <td>su</td>
+                            <td>se</td>
+                            <td>so</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>タ</td>
+                            <td>チ</td>
+                            <td>ツ</td>
+                            <td>テ</td>
+                            <td>ト</td>
+                        </tr>
+                        <tr>
+                            <td>t-line</td>
+                            <td>ta</td>
+                            <td>chi</td>
+                            <td>tsu</td>
+                            <td>te</td>
+                            <td>to</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ナ</td>
+                            <td>ニ</td>
+                            <td>ヌ</td>
+                            <td>ネ</td>
+                            <td>ノ</td>
+                        </tr>
+                        <tr>
+                            <td>n-line</td>
+                            <td>na</td>
+                            <td>ni</td>
+                            <td>nu</td>
+                            <td>ne</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ハ</td>
+                            <td>ヒ</td>
+                            <td>フ</td>
+                            <td>ヘ</td>
+                            <td>ホ</td>
+                        </tr>
+                        <tr>
+                            <td>h-line</td>
+                            <td>ha</td>
+                            <td>hi</td>
+                            <td>fu</td>
+                            <td>he</td>
+                            <td>ho</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>マ</td>
+                            <td>ミ</td>
+                            <td>ム</td>
+                            <td>メ</td>
+                            <td>モ</td>
+                        </tr>
+                        <tr>
+                            <td>m-line</td>
+                            <td>ma</td>
+                            <td>mi</td>
+                            <td>mu</td>
+                            <td>me</td>
+                            <td>mo</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ヤ</td>
+                            <td></td>
+                            <td>ユ</td>
+                            <td></td>
+                            <td>ヨ</td>
+                        </tr>
+                        <tr>
+                            <td>y-line</td>
+                            <td>ya</td>
+                            <td></td>
+                            <td>yu</td>
+                            <td></td>
+                            <td>yo</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ラ</td>
+                            <td>リ</td>
+                            <td>ル</td>
+                            <td>レ</td>
+                            <td>ロ</td>
+                        </tr>
+                        <tr>
+                            <td>r-line</td>
+                            <td>ra</td>
+                            <td>ri</td>
+                            <td>ru</td>
+                            <td>re</td>
+                            <td>ro</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ワ</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>ヲ</td>
+                        </tr>
+                        <tr>
+                            <td>w-line</td>
+                            <td>wa</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>wo</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>ン</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>n</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- 4th block -->
+                <div class="block" id="kanji">
+                    <ul>
+                        <li>
+                            <h3>Kanji</h3>
+                        </li>
+                    </ul>
+                    <!-- <div><input type="checkbox" id="tgl-crmj" class="m-l" onclick="seer()">Show/hide Romaji</div> -->
+                    <table id="c-tbl">
+                        <tr>
+                            <td></td>
+                            <td>山</td>
+                            <td>川</td>
+                            <td>田</td>
+                            <td>人</td>
+                            <td>子</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
