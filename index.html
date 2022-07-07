@@ -10,10 +10,9 @@
 
 <body>
     <div class="main-container">
-        <!-- side-nav wrapper for nav since nav is fixed -->
-        <div class="side-nav"> 
+        <!-- navbar -->
             <div class="nav">
-                <div class="brand">Nihongo&emsp;&emsp;&emsp;&nbsp;&#9776;</div>
+                <div class="brand"><a href="index.html">Nihongo&emsp;&nbsp;&nbsp;&nbsp;&#9776;</a></div>
                 <div class="accordion">
                     <label for="item1">
                         <div class="button">Basics &#9207</div>
@@ -24,6 +23,8 @@
                             <div><a href="index.html#hiragana">Hiragana</a></div>
                             <div><a href="index.html#katakana">Katakana</a></div>
                             <div><a href="index.html#kanji">Kanji</a></div>
+                            <div><a href="index.html#kanji">Counting</a></div>
+                            <div><a href="index.html#kanji">Date & Time</a></div>
                         </div>
                     </div>
                 </div>
@@ -54,8 +55,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
+       
         <!-- Main content wrapper -->
         <div class="expanse">
             <!-- Main content -->
@@ -90,191 +90,274 @@
 
                 <!-- 2nd block -->
                 <div class="block" id="hiragana">
-                    <ul>
-                        <li>
-                            <h3>Hiragana</h3>
-                        </li>
-                    </ul>
-                    <div><input type="checkbox" id="tgl-hrmj" class="m-l" onclick="seer()">Show/hide Romaji</div>
-                    <table id="h-tbl">
-                        <tr>
-                            <td></td>
-                            <td>あ</td>
-                            <td>い</td>
-                            <td>う</td>
-                            <td>え</td>
-                            <td>お</td>
-                        </tr>
-                        <tr>
-                            <td>Vowels</td>
-                            <td>a</td>
-                            <td>i</td>
-                            <td>u</td>
-                            <td>e</td>
-                            <td>o</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>か</td>
-                            <td>き</td>
-                            <td>く</td>
-                            <td>け</td>
-                            <td>こ</td>
-                        </tr>
-                        <tr>
-                            <td>k-line</td>
-                            <td>ka</td>
-                            <td>ki</td>
-                            <td>ku</td>
-                            <td>ke</td>
-                            <td>ko</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>さ</td>
-                            <td>し</td>
-                            <td>す</td>
-                            <td>せ</td>
-                            <td>そ</td>
-                        </tr>
-                        <tr>
-                            <td>s-line</td>
-                            <td>sa</td>
-                            <td>shi</td>
-                            <td>su</td>
-                            <td>se</td>
-                            <td>so</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>た</td>
-                            <td>ち</td>
-                            <td>つ</td>
-                            <td>て</td>
-                            <td>と</td>
-                        </tr>
-                        <tr>
-                            <td>t-line</td>
-                            <td>ta</td>
-                            <td>chi</td>
-                            <td>tsu</td>
-                            <td>te</td>
-                            <td>to</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>な</td>
-                            <td>に</td>
-                            <td>ぬ</td>
-                            <td>ね</td>
-                            <td>の</td>
-                        </tr>
-                        <tr>
-                            <td>n-line</td>
-                            <td>na</td>
-                            <td>ni</td>
-                            <td>nu</td>
-                            <td>ne</td>
-                            <td>no</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>は</td>
-                            <td>ひ</td>
-                            <td>ふ</td>
-                            <td>へ</td>
-                            <td>ほ</td>
-                        </tr>
-                        <tr>
-                            <td>h-line</td>
-                            <td>ha</td>
-                            <td>hi</td>
-                            <td>fu</td>
-                            <td>he</td>
-                            <td>ho</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>ま</td>
-                            <td>み</td>
-                            <td>む</td>
-                            <td>め</td>
-                            <td>も</td>
-                        </tr>
-                        <tr>
-                            <td>m-line</td>
-                            <td>ma</td>
-                            <td>mi</td>
-                            <td>mu</td>
-                            <td>me</td>
-                            <td>mo</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>や</td>
-                            <td></td>
-                            <td>ゆ</td>
-                            <td></td>
-                            <td>よ</td>
-                        </tr>
-                        <tr>
-                            <td>y-line</td>
-                            <td>ya</td>
-                            <td></td>
-                            <td>yu</td>
-                            <td></td>
-                            <td>yo</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>ら</td>
-                            <td>り</td>
-                            <td>る</td>
-                            <td>れ</td>
-                            <td>ろ</td>
-                        </tr>
-                        <tr>
-                            <td>r-line</td>
-                            <td>ra</td>
-                            <td>ri</td>
-                            <td>ru</td>
-                            <td>re</td>
-                            <td>ro</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>わ</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>を</td>
-                        </tr>
-                        <tr>
-                            <td>w-line</td>
-                            <td>wa</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>wo</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>ん</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>n</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
+                    <ul><li><h3>Hiragana</h3></li></ul>
+                    <div><input type="checkbox" class="m-l" onclick='toggle(this, "h-tbl-1")''>Show/hide Romaji</div>
+                    <div class="row" id="h-tbl-1">
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">あ</div>
+                            <div class="col1">い</div>
+                            <div class="col1">う</div>
+                            <div class="col1">え</div>
+                            <div class="col1">お</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">Vowels</div>
+                            <div class="col1">a</div>
+                            <div class="col1">i</div>
+                            <div class="col1">u</div>
+                            <div class="col1">e</div>
+                            <div class="col1">o</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">か</div>
+                            <div class="col1">き</div>
+                            <div class="col1">く</div>
+                            <div class="col1">け</div>
+                            <div class="col1">こ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">k-line</div>
+                            <div class="col1">ka</div>
+                            <div class="col1">ki</div>
+                            <div class="col1">ku</div>
+                            <div class="col1">ke</div>
+                            <div class="col1">ko</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">さ</div>
+                            <div class="col1">し</div>
+                            <div class="col1">す</div>
+                            <div class="col1">せ</div>
+                            <div class="col1">そ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">s-line</div>
+                            <div class="col1">sa</div>
+                            <div class="col1">shi</div>
+                            <div class="col1">su</div>
+                            <div class="col1">se</div>
+                            <div class="col1">so</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">た</div>
+                            <div class="col1">ち</div>
+                            <div class="col1">つ</div>
+                            <div class="col1">て</div>
+                            <div class="col1">と</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">t-line</div>
+                            <div class="col1">ta</div>
+                            <div class="col1">chi</div>
+                            <div class="col1">tsu</div>
+                            <div class="col1">te</div>
+                            <div class="col1">to</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">な</div>
+                            <div class="col1">に</div>
+                            <div class="col1">ぬ</div>
+                            <div class="col1">ね</div>
+                            <div class="col1">の</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">n-line</div>
+                            <div class="col1">na</div>
+                            <div class="col1">ni</div>
+                            <div class="col1">nu</div>
+                            <div class="col1">ne</div>
+                            <div class="col1">no</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">は</div>
+                            <div class="col1">ひ</div>
+                            <div class="col1">ふ</div>
+                            <div class="col1">へ</div>
+                            <div class="col1">ほ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">h-line</div>
+                            <div class="col1">ha</div>
+                            <div class="col1">hi</div>
+                            <div class="col1">fu</div>
+                            <div class="col1">he</div>
+                            <div class="col1">ho</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ま</div>
+                            <div class="col1">み</div>
+                            <div class="col1">む</div>
+                            <div class="col1">め</div>
+                            <div class="col1">も</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">m-line</div>
+                            <div class="col1">ma</div>
+                            <div class="col1">mi</div>
+                            <div class="col1">mu</div>
+                            <div class="col1">me</div>
+                            <div class="col1">mo</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">や</div>
+                            <div class="col1"></div>
+                            <div class="col1">ゆ</div>
+                            <div class="col1"></div>
+                            <div class="col1">よ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">y-line</div>
+                            <div class="col1">ya</div>
+                            <div class="col1"></div>
+                            <div class="col1">yu</div>
+                            <div class="col1"></div>
+                            <div class="col1">yo</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ら</div>
+                            <div class="col1">り</div>
+                            <div class="col1">る</div>
+                            <div class="col1">れ</div>
+                            <div class="col1">ろ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">r-line</div>
+                            <div class="col1">ra</div>
+                            <div class="col1">ri</div>
+                            <div class="col1">ru</div>
+                            <div class="col1">re</div>
+                            <div class="col1">ro</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">わ</div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1">を</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">w-line</div>
+                            <div class="col1">wa</div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1">wo</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ん</div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">n</div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                        </div>
+                    </div>
+                    
+                    <ul><h4><li>Dakuon/Handakuon</li></h4></ul>
+                    <div><input type="checkbox" class="m-l" onclick='toggle(this, "h-tbl-2")'>Show/hide Romaji</div>
+                    <div class="row" id="h-tbl-2">
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">が</div>
+                            <div class="col1">ぎ</div>
+                            <div class="col1">ぐ</div>
+                            <div class="col1">げ</div>
+                            <div class="col1">ご</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">g-line</div>
+                            <div class="col1">ga</div>
+                            <div class="col1">gi</div>
+                            <div class="col1">gu</div>
+                            <div class="col1">ge</div>
+                            <div class="col1">go</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ざ</div>
+                            <div class="col1">じ</div>
+                            <div class="col1">ず</div>
+                            <div class="col1">ぜ</div>
+                            <div class="col1">ぞ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">z-line</div>
+                            <div class="col1">za</div>
+                            <div class="col1">ji</div>
+                            <div class="col1">zu</div>
+                            <div class="col1">ze</div>
+                            <div class="col1">zo</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">だ</div>
+                            <div class="col1">ぢ</div>
+                            <div class="col1">づ</div>
+                            <div class="col1">で</div>
+                            <div class="col1">ど</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">d-line</div>
+                            <div class="col1">da</div>
+                            <div class="col1">ji</div>
+                            <div class="col1">zu</div>
+                            <div class="col1">de</div>
+                            <div class="col1">do</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ば</div>
+                            <div class="col1">び</div>
+                            <div class="col1">ぶ</div>
+                            <div class="col1">べ</div>
+                            <div class="col1">ぼ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">b-line</div>
+                            <div class="col1">ba</div>
+                            <div class="col1">bi</div>
+                            <div class="col1">bu</div>
+                            <div class="col1">be</div>
+                            <div class="col1">bo</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ぱ</div>
+                            <div class="col1">ぴ</div>
+                            <div class="col1">ぷ</div>
+                            <div class="col1">ぺ</div>
+                            <div class="col1">ぽ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">p-line</div>
+                            <div class="col1">pa</div>
+                            <div class="col1">pi</div>
+                            <div class="col1">pu</div>
+                            <div class="col1">pe</div>
+                            <div class="col1">po</div>
+                        </div>
+                    </div>
                 </div>
+
+
 
                 <!-- 3rd block -->
                 <div class="block" id="katakana">
@@ -283,185 +366,185 @@
                             <h3>Katakana</h3>
                         </li>
                     </ul>
-                    <div><input type="checkbox" id="tgl-krmj" class="m-l" onclick="seer()">Show/hide Romaji</div>
-                    <table id="k-tbl">
-                        <tr>
-                            <td></td>
-                            <td>ア</td>
-                            <td>イ</td>
-                            <td>ウ</td>
-                            <td>エ</td>
-                            <td>オ</td>
-                        </tr>
-                        <tr>
-                            <td>Vowels</td>
-                            <td>a</td>
-                            <td>i</td>
-                            <td>u</td>
-                            <td>e</td>
-                            <td>o</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>カ</td>
-                            <td>キ</td>
-                            <td>ク</td>
-                            <td>ケ</td>
-                            <td>コ</td>
-                        </tr>
-                        <tr>
-                            <td>k-line</td>
-                            <td>ka</td>
-                            <td>ki</td>
-                            <td>ku</td>
-                            <td>ke</td>
-                            <td>ko</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>サ</td>
-                            <td>シ</td>
-                            <td>ス</td>
-                            <td>セ</td>
-                            <td>ソ</td>
-                        </tr>
-                        <tr>
-                            <td>s-line</td>
-                            <td>sa</td>
-                            <td>shi</td>
-                            <td>su</td>
-                            <td>se</td>
-                            <td>so</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>タ</td>
-                            <td>チ</td>
-                            <td>ツ</td>
-                            <td>テ</td>
-                            <td>ト</td>
-                        </tr>
-                        <tr>
-                            <td>t-line</td>
-                            <td>ta</td>
-                            <td>chi</td>
-                            <td>tsu</td>
-                            <td>te</td>
-                            <td>to</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>ナ</td>
-                            <td>ニ</td>
-                            <td>ヌ</td>
-                            <td>ネ</td>
-                            <td>ノ</td>
-                        </tr>
-                        <tr>
-                            <td>n-line</td>
-                            <td>na</td>
-                            <td>ni</td>
-                            <td>nu</td>
-                            <td>ne</td>
-                            <td>no</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>ハ</td>
-                            <td>ヒ</td>
-                            <td>フ</td>
-                            <td>ヘ</td>
-                            <td>ホ</td>
-                        </tr>
-                        <tr>
-                            <td>h-line</td>
-                            <td>ha</td>
-                            <td>hi</td>
-                            <td>fu</td>
-                            <td>he</td>
-                            <td>ho</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>マ</td>
-                            <td>ミ</td>
-                            <td>ム</td>
-                            <td>メ</td>
-                            <td>モ</td>
-                        </tr>
-                        <tr>
-                            <td>m-line</td>
-                            <td>ma</td>
-                            <td>mi</td>
-                            <td>mu</td>
-                            <td>me</td>
-                            <td>mo</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>ヤ</td>
-                            <td></td>
-                            <td>ユ</td>
-                            <td></td>
-                            <td>ヨ</td>
-                        </tr>
-                        <tr>
-                            <td>y-line</td>
-                            <td>ya</td>
-                            <td></td>
-                            <td>yu</td>
-                            <td></td>
-                            <td>yo</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>ラ</td>
-                            <td>リ</td>
-                            <td>ル</td>
-                            <td>レ</td>
-                            <td>ロ</td>
-                        </tr>
-                        <tr>
-                            <td>r-line</td>
-                            <td>ra</td>
-                            <td>ri</td>
-                            <td>ru</td>
-                            <td>re</td>
-                            <td>ro</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>ワ</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>ヲ</td>
-                        </tr>
-                        <tr>
-                            <td>w-line</td>
-                            <td>wa</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>wo</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>ン</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>n</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
+                    <div><input type="checkbox" class="m-l" onclick='toggle(this, "k-tbl-1")'>Show/hide Romaji</div>
+                    <div class="row" id="k-tbl-1">
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ア</div>
+                            <div class="col1">イ</div>
+                            <div class="col1">ウ</div>
+                            <div class="col1">エ</div>
+                            <div class="col1">オ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">Vowels</div>
+                            <div class="col1">a</div>
+                            <div class="col1">i</div>
+                            <div class="col1">u</div>
+                            <div class="col1">e</div>
+                            <div class="col1">o</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">カ</div>
+                            <div class="col1">キ</div>
+                            <div class="col1">ク</div>
+                            <div class="col1">ケ</div>
+                            <div class="col1">コ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">k-line</div>
+                            <div class="col1">ka</div>
+                            <div class="col1">ki</div>
+                            <div class="col1">ku</div>
+                            <div class="col1">ke</div>
+                            <div class="col1">ko</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">サ</div>
+                            <div class="col1">シ</div>
+                            <div class="col1">ス</div>
+                            <div class="col1">セ</div>
+                            <div class="col1">ソ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">s-line</div>
+                            <div class="col1">sa</div>
+                            <div class="col1">shi</div>
+                            <div class="col1">su</div>
+                            <div class="col1">se</div>
+                            <div class="col1">so</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">タ</div>
+                            <div class="col1">チ</div>
+                            <div class="col1">ツ</div>
+                            <div class="col1">テ</div>
+                            <div class="col1">ト</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">t-line</div>
+                            <div class="col1">ta</div>
+                            <div class="col1">chi</div>
+                            <div class="col1">tsu</div>
+                            <div class="col1">te</div>
+                            <div class="col1">to</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ナ</div>
+                            <div class="col1">ニ</div>
+                            <div class="col1">ヌ</div>
+                            <div class="col1">ネ</div>
+                            <div class="col1">ノ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">n-line</div>
+                            <div class="col1">na</div>
+                            <div class="col1">ni</div>
+                            <div class="col1">nu</div>
+                            <div class="col1">ne</div>
+                            <div class="col1">no</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ハ</div>
+                            <div class="col1">ヒ</div>
+                            <div class="col1">フ</div>
+                            <div class="col1">ヘ</div>
+                            <div class="col1">ホ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">h-line</div>
+                            <div class="col1">ha</div>
+                            <div class="col1">hi</div>
+                            <div class="col1">fu</div>
+                            <div class="col1">he</div>
+                            <div class="col1">ho</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">マ</div>
+                            <div class="col1">ミ</div>
+                            <div class="col1">ム</div>
+                            <div class="col1">メ</div>
+                            <div class="col1">モ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">m-line</div>
+                            <div class="col1">ma</div>
+                            <div class="col1">mi</div>
+                            <div class="col1">mu</div>
+                            <div class="col1">me</div>
+                            <div class="col1">mo</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ヤ</div>
+                            <div class="col1"></div>
+                            <div class="col1">ユ</div>
+                            <div class="col1"></div>
+                            <div class="col1">ヨ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">y-line</div>
+                            <div class="col1">ya</div>
+                            <div class="col1"></div>
+                            <div class="col1">yu</div>
+                            <div class="col1"></div>
+                            <div class="col1">yo</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ラ</div>
+                            <div class="col1">リ</div>
+                            <div class="col1">ル</div>
+                            <div class="col1">レ</div>
+                            <div class="col1">ロ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">r-line</div>
+                            <div class="col1">ra</div>
+                            <div class="col1">ri</div>
+                            <div class="col1">ru</div>
+                            <div class="col1">re</div>
+                            <div class="col1">ro</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ワ</div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1">ヲ</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1">w-line</div>
+                            <div class="col1">wa</div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1">wo</div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">ン</div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                        </div>
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">n</div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                            <div class="col1"></div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- 4th block -->
@@ -471,17 +554,17 @@
                             <h3>Kanji</h3>
                         </li>
                     </ul>
-                    <!-- <div><input type="checkbox" id="tgl-crmj" class="m-l" onclick="seer()">Show/hide Romaji</div> -->
-                    <table id="c-tbl">
-                        <tr>
-                            <td></td>
-                            <td>山</td>
-                            <td>川</td>
-                            <td>田</td>
-                            <td>人</td>
-                            <td>子</td>
-                        </tr>
-                    </table>
+                    <div><input type="checkbox" class="m-l" onclick="toggle(c-tbl-1)">Show/hide Romaji</div>
+                    <div class="row" id="c-tbl-1">
+                        <div class="col">
+                            <div class="col1"></div>
+                            <div class="col1">山</div>
+                            <div class="col1">川</div>
+                            <div class="col1">田</div>
+                            <div class="col1">人</div>
+                            <div class="col1">子</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
