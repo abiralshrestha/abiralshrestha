@@ -12,7 +12,7 @@
 
     .nav, .side-nav{
         margin: 0;
-        margin-left: -125px;
+        margin-left: -111px;
         box-shadow: none !important ;
         /* background-color: rgba(255, 255, 255, 0) !important; */
         background-image: -moz-radial-gradient(center 45deg, circle cover, #ffffff00, #ffffff00) !important;
@@ -38,8 +38,12 @@
     }
 
     .expanse{
-        padding-top: 0;
+        padding: 90px 0 0 0 !important;
     }
+
+    table{
+        width: 100%;    
+    };
 
 }
 
