@@ -73,7 +73,7 @@ p {
     height: 100%;
     color: white;
     position: fixed;
-    margin-left: -185px;
+    margin-left: -160px;
     width: var(--nav-width);
     box-shadow: none !important ;
     /* background-color: rgba(255, 255, 255, 0); */
