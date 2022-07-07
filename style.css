@@ -11,15 +11,21 @@
     }
 
     .nav, .side-nav{
-        background-color: rgba(255, 255, 255, 0) !important;
+        /* background-color: rgba(255, 255, 255, 0) !important; */
         box-shadow: none !important ;
+        background-image: -moz-radial-gradient(center 45deg, circle cover, #ffffff00, #ffffff00) !important;
+        background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#ffffff00), to(#ffffff00)) !important;
+        background: radial-gradient(ellipse at center, #ffffff00, #ffffff00) !important;
         margin: 0;
         margin-left: -110px;
     }
 
     .side-nav:hover, .nav:hover{
-        background-color: rgba(10, 14, 224, 0.686) !important;
-        box-shadow: 0 0 8px rgba(10, 14, 224, 0.686) !important;
+        /* background-color: rgba(10, 14, 224, 0.8) !important; */
+        background-image: -moz-radial-gradient(center 45deg, circle cover, #0173ff, #ffffffb0) !important;
+        background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#4c00ff), to(#ffffffb0)) !important;
+        background: radial-gradient(ellipse at center, #0059ff, #8d85ff) !important;
+        box-shadow: 0 0 8px rgba(10, 14, 224, 0.9) !important;
         margin: 0px;
     }
 
@@ -75,10 +81,10 @@ p {
     position: fixed;
     height: 100%;
     color: white;
-    /* background-color: rgba(10, 14, 224, 0.686); */
+    /* background-color: rgba(10, 14, 224, 0.7); */
     background-image: -moz-radial-gradient(center 45deg, circle cover, #0173ff, #ffffffb0);
     background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#4c00ff), to(#ffffffb0));
-    background: radial-gradient(ellipse at center, #0059ff, #8d85ff); 
+    background: radial-gradient(ellipse at center, #0059ff, #8d85ff);
     box-shadow: 0 0 8px rgba(10, 14, 224, 0.686);
 }
 
