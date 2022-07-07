@@ -11,26 +11,34 @@
     }
 
     .nav, .side-nav{
-        /* background-color: rgba(255, 255, 255, 0) !important; */
+        margin: 0;
+        margin-left: -125px;
         box-shadow: none !important ;
+        /* background-color: rgba(255, 255, 255, 0) !important; */
         background-image: -moz-radial-gradient(center 45deg, circle cover, #ffffff00, #ffffff00) !important;
         background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#ffffff00), to(#ffffff00)) !important;
         background: radial-gradient(ellipse at center, #ffffff00, #ffffff00) !important;
-        margin: 0;
-        margin-left: -110px;
     }
 
     .side-nav:hover, .nav:hover{
-        /* background-color: rgba(10, 14, 224, 0.8) !important; */
-        background-image: -moz-radial-gradient(center 45deg, circle cover, #0173ff, #ffffffb0) !important;
-        background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#4c00ff), to(#ffffffb0)) !important;
-        background: radial-gradient(ellipse at center, #0059ff, #8d85ff) !important;
-        box-shadow: 0 0 8px rgba(10, 14, 224, 0.9) !important;
         margin: 0px;
+        box-shadow: 0 0 8px rgba(10, 14, 224, 0.9) !important;
+        /* background-color: rgba(10, 14, 224, 0.8) !important; */
+        background-image: -moz-radial-gradient(center 45deg, circle cover, #0173ffab, #ffffffb0) !important;
+        background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#4c00ffab), to(#ffffffb0)) !important;
+        background: radial-gradient(ellipse at center, #0059ff, #8d85ff) !important;
     }
 
     .brand{
         background-color: rgba(10, 14, 224, 0.5) !important;
+    }
+
+    .container{
+        width: 80% !important;
+    }
+
+    .expanse{
+        padding-top: 0;
     }
 
 }
