@@ -65,8 +65,6 @@ p {
 
 .brand {
     cursor: pointer;
-    /* position: sticky; */
-    border-radius: 0 0 8px 8px;
     font-size: 2em !important;
     color: rgb(255, 233, 233);
     background-color: rgba(10, 14, 224, 0.755);
