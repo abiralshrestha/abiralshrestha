@@ -6,7 +6,7 @@ body {
     margin: 0;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0 0 8px rgba(65, 65, 65, 0.15);
+/*     text-shadow: 0 0 8px rgba(65, 65, 65, 0.15); */
     background: #ffdedeb0;
     background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#ff0126), to(#ffffffb0));
     background: radial-gradient(ellipse at center, #ff00265b, #FFFFFF);
