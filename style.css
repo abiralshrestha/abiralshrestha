@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+*{
+    /* transition: all 0.2s ease; */
+}
+
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -66,7 +70,7 @@ p {
 .brand {
     cursor: pointer;
     /* position: sticky; */
-    border-radius: 0 0 8px 0;
+    border-radius: 0 0 8px 8px;
     font-size: 2em !important;
     color: rgb(255, 233, 233);
     background-color: rgba(10, 14, 224, 0.755);
@@ -75,6 +79,7 @@ p {
 
 /* ~~Accordion~~ */
 .button {
+    text-shadow: 0 0 5px black;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -84,16 +89,15 @@ p {
 }
 
 .content {
-    max-height: 0;
     transition: all 0.3s ease-in-out;
     padding-left: 20px;
     overflow: hidden;
     box-sizing: border-box;
+    max-height: 250px;
 }
 
 #item1:checked~.content, #item2:checked~.content, #item3:checked~.content {
-    margin-bottom: -20px;
-    max-height: 250px;
+    max-height: 0px;
 }
 
 .inner {
@@ -197,4 +201,25 @@ p {
         width: 100%;
         position: relative;
     }
+
+    .menu{
+        transition: all 0.3s ease;
+        max-height: 0px;
+        padding: 0px !important;
+        overflow: hidden;
+    }
+
+    .menu:nth-child(n){
+        color: rgba(0, 0, 0, 0);
+    }
+
+    #menu:checked~.menu{
+        padding: 14px !important;
+        max-height: 1000px;
+    }
+
+    #menu:checked~.menu:nth-child(n){
+        color: white;
+    }
+    
 }

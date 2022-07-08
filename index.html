@@ -11,12 +11,18 @@
 <body>
     <div class="main-container">
         <!-- navbar -->
-            <div class="nav-wrap">
-                <div class="nav">
-                    <div class="brand"><a href="index.html">Nihongo</a></div>
+        <div class="nav-wrap">
+            <div class="nav">
+                <div class="brand">
+                    <label for="menu">
+                        <div class="button">Nihongo  &#9776;</div>
+                    </label>
+                </div>
+                <input type="checkbox" id="menu" hidden>
+                <div class="menu">
                     <div class="accordion">
                         <label for="item1">
-                            <div class="button">Basics &#9207</div>
+                            <div class="button">Basics &#9207;</div>
                         </label>
                         <input type="checkbox" id="item1" hidden>
                         <div class="content">
@@ -31,33 +37,34 @@
                     </div>
                     <div class="accordion">
                         <label for="item2">
-                            <div class="button">Vocabulary &#9207</div>
+                            <div class="button">Vocabulary &#9207;</div>
                         </label>
                         <input type="checkbox" id="item2" hidden>
                         <div class="content">
                             <div class="inner">
-                                <div>Lesson 1</div>
-                                <div>Lesson 2</div>
-                                <div>Lesson 3</div>
+                                <div><a href="">Lesson 1</a></div>
+                                <div><a href="">Lesson 2</a></div>
+                                <div><a href="">Lesson 3</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion">
                         <label for="item3">
-                            <div class="button">Kanji &#9207</div>
+                            <div class="button">Kanji &#9207;</div>
                         </label>
                         <input type="checkbox" id="item3" hidden>
                         <div class="content">
                             <div class="inner">
-                                <div>Part 1</div>
-                                <div>Part 2</div>
-                                <div>Part 3</div>
+                                <div><a href="">Part 1</a></div>
+                                <div><a href="">Part 2</a></div>
+                                <div><a href="">Part 3</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
-           
             </div>
+
+        </div>
         <!-- Main content wrapper -->
         <div class="expanse">
             <!-- Main content -->
@@ -92,7 +99,11 @@
 
                 <!-- 2nd block -->
                 <div class="block" id="hiragana">
-                    <ul><li><h3>Hiragana</h3></li></ul>
+                    <ul>
+                        <li>
+                            <h3>Hiragana</h3>
+                        </li>
+                    </ul>
                     <div><input type="checkbox" class="m-l" onclick='toggle(this, "h-tbl-1")''>Show/hide Romaji</div>
                     <div class="row" id="h-tbl-1">
                         <div class="col">
@@ -274,7 +285,7 @@
                     </div>
                     
                     <ul><h4><li>Dakuon/Handakuon</li></h4></ul>
-                    <div><input type="checkbox" class="m-l" onclick='toggle(this, "h-tbl-2")'>Show/hide Romaji</div>
+                    <div><input type="checkbox" class="m-l" onclick=' toggle(this, "h-tbl-2" )'>Show/hide Romaji</div>
                     <div class="row" id="h-tbl-2">
                         <div class="col">
                             <div></div>
