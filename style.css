@@ -1,225 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-/* ~~Global rules~~ */
-:root {
-    --nav-width: 240px;
+* {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
     margin: 0;
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0 0 8px rgba(65, 65, 65, 0.15);
     background: #ffdedeb0;
     background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#ff0126), to(#ffffffb0));
     background: radial-gradient(ellipse at center, #ff00265b, #FFFFFF);
-    /* background-image: linear-gradient(315deg, #d5adc8 30%, #ff343bdc 84%); */
 }
 
-ul {
-    list-style-type: square;
+/* ~~Table~~ */
+table {
+    width: 70%;
+    margin: 20px auto;
+    /* overflow: hidden; */
+    border-radius: 20px;
+    box-shadow: 0 0 5px;
+    border-spacing: 0px;
+    background: rgb(255, 255, 255);
 }
 
-p {
-    text-align:justify;
-    line-height: 1.2em;
-}
-
-.m-l {
-    margin: 15px !important;
-}
-
-/* ~~Main Container~~ */
-.main-container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: var(--nav-width) auto;
-}
-
-/* ~~Navbar~~ */
-.nav-wrap{
-    width: 100%;
-    background-image: -moz-radial-gradient(center 45deg, circle cover, #0173ffab, #ffffffb0);
-    background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#4c00ffab), to(#ffffffb0));
-    background: radial-gradient(ellipse at center, #0059ff, #8d85ff);
-}
-
-.nav{
-    width: var(--nav-width);
-    position: fixed;
-    margin: 0;
-    height: 100%;
-    color: white;
-    box-shadow: none !important ;
-    background-image: -moz-radial-gradient(center 45deg, circle cover, #0173ffab, #ffffffb0);
-    background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#4c00ffab), to(#ffffffb0));
-    background: radial-gradient(ellipse at center, #0059ff, #8d85ff);
-}
-
-
-.nav>div {
-    font-size: 16px;
-    padding: 14px;
-    display: block;
-}
-
-.brand {
-    cursor: pointer;
-    font-size: 2em !important;
-    color: rgb(255, 233, 233);
-    background-color: rgba(10, 14, 224, 0.755);
-    box-shadow: 0 4px 5px -2px rgba(38, 40, 179, 0.686);
-    user-select: none;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        -o-user-select: none;
-    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
-}
-
-/* ~~Accordion~~ */
-.button {
-    text-shadow: 0 0 5px black;
-    cursor: pointer;
-    box-sizing: border-box;
-}
-
-.button:hover {
-    opacity: 0.9;
-}
-
-.content {
-/*     transition: all 0.3s ease-in-out; */
-    padding-left: 20px;
-    overflow: hidden;
-    box-sizing: border-box;
-    max-height: 250px;
-}
-
-#item1:checked~.content, #item2:checked~.content, #item3:checked~.content {
-    max-height: 0px;
-}
-
-.inner {
-    margin-top: 6px;
-}
-
-.inner > div{
-    cursor: pointer;
+td {
     padding: 8px;
-}
-
-.inner> div > a, .brand > a{
-    text-decoration: none;
-    color: white;
-}
-
-
-/* ~~Expanse~~ */
-.expanse {
-    display: block;
-    padding: 40px;
-}
-
-
-/* ~~Container~~ */
-.container {
-    border-radius: 5px;
-    width: 60%;
-    display: block;
-    margin: auto;
-    padding: 40px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px -5px, rgba(0, 0, 0, 0.3) 0px 0px 20px -5px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-.block>div {
     text-align: center;
 }
 
-/* ~~Grid Table~~ */
-.row{
-    table-layout: fixed;
-    background-color: white;
-    margin: auto;
-    width: 60%;
-    border: 1px groove;
-    border-radius: 18px;
-    display: grid;
-    grid-template-columns: 100%;
-    overflow: hidden;
+tr:nth-child(4n-2),
+tr:nth-child(4n-3) {
+    background: #A16B734A;
 }
 
-
-.col:nth-child(4n-1){
-    background-color: #a16b734a;
-}
-.col:nth-child(4n-4){
-    background-color: #a16b734a;
-}
-
-.col{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    grid-auto-flow: column;
-}
-
-.col>div{
-    padding: 8px;
-    word-wrap: break-word;
-    text-align: center;
-}
-
-.hide-even .col:nth-child(even){
-    color: rgba(255, 255, 255, 0);
+.hide-even tr:nth-child(2n) {
+    color: rgb(255, 255, 255, 0);
     text-shadow: none;
 }
 
-/* ~~Responsive rules~~ */
-@media screen and (max-width: 700px) {
-    .main-container {
-        grid-template-columns: auto;
-    }
+/* ~~Navbar~~ */
+.nav {
+    position: sticky;
+    top: 0;
+    margin: -15px;
+    display: flex;
+    /* overflow: hidden; */
+    width: auto;
+    border-radius: 0 0 10px 10px;
+    background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#ff0126), to(#ffffff));
+    box-shadow: 0 0 5px;
+}
 
-    .block>div {
-        margin: auto;
-    }
+.nav :nth-child(n) {
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
 
-    .container{
+.snav {
+    height: 150px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    top: 30px;
+    display: none;
+    position: absolute;
+    border-radius: 6px;
+    background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#ffd1d1), to(#ffffff));
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black !important;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*  ~~Container~~ */
+.container {
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px -5px, rgba(0, 0, 0, 0.3) 0px 0px 20px -5px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* ~~text align center~~ */
+.c-text {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
         width: 80%;
     }
+}
 
-    .expanse{
-        padding: 90px 0 0 0;
-    }
-
-    .row{
-        width: 100%;    
-    }
-
-    .nav{
+@media only screen and (max-width: 650px) {
+    .container {
         width: 100%;
-        position: relative;
     }
-
-    .menu{
-/*         transition: all 0.3s ease; */
-        max-height: 0px;
-        padding: 0px !important;
-        overflow: hidden;
-    }
-
-    .menu:nth-child(n){
-        color: rgba(0, 0, 0, 0);
-    }
-
-    #menu:checked~.menu{
-        padding: 14px !important;
-        max-height: 1000px;
-    }
-
-    #menu:checked~.menu:nth-child(n){
-        color: white;
-    }
-    
 }
