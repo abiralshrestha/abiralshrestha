@@ -4,4 +4,4 @@ function toggle(input, id) {
     } else {
       document.getElementById(id).classList.remove("hide-even")
     }
-  } 
+}

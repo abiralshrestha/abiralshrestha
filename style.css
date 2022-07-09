@@ -1,22 +1,142 @@
-* {
-    scroll-behavior: smooth;
-}
-
 body {
+    text-align: justify;
     margin: 0;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0 0 8px rgba(65, 65, 65, 0.15);
     background: #ffdedeb0;
-    background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#ff0126), to(#ffffffb0));
-    background: radial-gradient(ellipse at center, #ff00265b, #FFFFFF);
 }
 
+.c-link {
+    color: black;
+    text-decoration: none;
+}
+
+.text-warn{
+    color: red;
+}
+
+.c-text {
+    text-align: center;
+}
+
+.main-container {
+    width: 50%;
+    margin: 0 auto;
+    background: #ffffff9f;
+}
+
+.container{
+    margin: auto;
+    padding: 10px;
+}
+
+/* table */
+.t-main{
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    text-align: center;
+    width: 60%;
+    margin: 15px auto;
+    border-spacing: 0;
+}
+
+.t-main td{
+    padding: 3px;
+}
+
+.t-main tr:nth-child(2n+1){
+    background:rgba(222, 222, 222, 0.639);
+}
+
+.calendar{
+    width: 80%;
+}
+
+/* Navbar */
 .nav {
-    margin: -15px;
-    display: inline-block;
-    width: auto;
+    top: 0;
+    position: sticky;
+    display: flex;
+    width: 100%;
     border-radius: 0 0 10px 10px;
     background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#ff0126), to(#ffffff));
     box-shadow: 0 0 5px;
+}
+
+.nav :nth-child(n) {
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    padding: 10px 5px;
+}
+
+.snav {
+    height: 150px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    top: 40px;
+    display: none;
+    position: absolute;
+    border-radius: 6px;
+    background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 800, from(#ffd1d1), to(#ffffff));
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black !important;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1000px) {
+    .main-container {
+        width: 80%;
+    }
+    .t-main{
+        width: 60%;
+    }
+    .calendar{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main-container {
+        width: 90%;
+    }
+    .t-main{
+        width: 70%;
+    }
+    .calendar{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        width: 100%;
+    }
+    .t-main{
+        width: 80%;
+    }
+    .calendar{
+        width: 95%;
+    }
+    .overflow{
+        left: -30px;
+    }
 }

@@ -3,333 +3,231 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
     <title>Nihongo Notes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="main-container">
         <div class="nav">
             <div>
                 <a href="index.html">Home</a>
             </div>
             <div class="dropdown">
-                <a>Basics</a>
+                <a href="#">Basics</a>
                 <div class="dropdown-content">
-                    <a href="">Kana</a>
-                    <a href="">Counting</a>
-                    <a href="">Date & Time</a></div>
+                    <a href="index.html">Kana</a>
+                    <a href="numbers.html">Counting</a>
+                    <a href="date-time.html">Date & Time</a>
+                </div>
             </div>
             <div class="dropdown">
-                <a title="Vocabularies from Minna no Nihongo">Vocabulary</a>
+                <a href="#" title="Vocabularies from Minna no Nihongo">Vocabulary</a>
                 <div class="dropdown-content">
-                    <a href="">Lesson 1-5</a>
-                    <a href="">Lesson 5-10</a></div>
+                    <a href="meaning1.html">Lesson 1-5</a>
+                    <a href="meaning2.html">Lesson 5-10</a>
+                    <a href="meaning3.html">Lesson 11-15</a>
+                    <a href="meaning4.html">Lesson 16-20</a>
+                    <a href="meaning5.html">Lesson 21-15</a>
+                </div>
             </div>
             <div class="dropdown">
-                <a>Kanji</a>
-                <div class="dropdown-content">
-                    <a href="">Week 1</a>
-                    <a href="">Week 2</a></div>
+                <a href="grammar.html">Grammar</a>
+            </div>
+            <div class="dropdown">
+                <a href="#">Kanji</a>
+                <div class="dropdown-content overflow">
+                    <a href="week1">Week 1</a>
+                    <a href="week2">Week 2</a>
+                    <a href="week3">Week 3</a>
+                    <a href="week4">Week 4</a>
+                    <a href="week5">Week 5</a>
+                    <a href="week6">Week 6</a>
+                    <a href="week7">Week 7</a>
+                    <a href="week8">Week 8</a>
+                    <a href="week9">Week 9</a>
+                    <a href="week10">Week 10</a>
+                    <a href="week11">Week 11</a>
+                    <a href="week12">Week 12</a>
+                </div>
             </div>
         </div>
-        <div class="snav"></div>
-        <h1 class="c-text"   style="color: red; margin: -60px 0 60px 0;">こんにちは</h1>
-        <p>
-            Nihongo Notes is personal collection of my knowledge on Japanese language, which isn't
-            much. but I will be trying my best update the contents along the way. Feel free to 
-            peruse this poorly written "website" ;). 
-        </p>
-        <p>
-            Japanese alphabets are divided into three types. Hiragana, Katakana and Kanji. 
-            <a href="#hiragana">Hiragana</a> are native Japanese alphabets, they don't have meaning in on themeselves 
-            and are used to write native words. <a href="#katakana">Katakana</a> are phonetically similar to Hiraganas 
-            but are written differently. They are used to write loan words. <a href="#kanji">Kanji</a> are characters 
-            taken from the Chinese script and used in the writing of Japanese. A single kanji represents an idea/meaning as a 
-            whole. They are often derived from pictures or painting of the thing they represent.
-        </p>
-        <h2 id="hiragana">Hiragana</h2>
-        <p>Hiragana consists of 46 different characters which are shown in table below. The 
-            hiragana in top row are 5 vowel sound and are prononced a little different from 
-            what their romaji represent:<br>
-            <ul><li>a as in "car"</li><li>i as in "ink"</li><li>u as in "super"</li>
-                <li>e as in "ten"</li><li>o as in "rope"</li>   </ul>
-            And on the left, the consonants are listed k, s, t, n, h, m, y, r, w, n. Which together 
-            mixed with the vowels gives them a sound. Note that these hiragana have to be written
-            with a certain stroke order, which I have not included because of my laziness.
-        </p>
-        <div class="c-text"><input type="checkbox" onclick="toggle(this, 'h-tbl-1')"> hide romaji</div>
-        <table id="h-tbl-1">
-        <tr><td></td><td>あ</td><td>い</td><td>う</td><td>え</td><td>お</td>
-        </tr>
-        <tr><td>vowels</td><td>a</td><td>i</td><td>u</td><td>e</td><td>o</td>
-        </tr>
-        <tr><td></td><td>か</td><td>き</td><td>く</td><td>け</td><td>こ</td>
-        </tr>
-        <tr><td>k-line</td><td>ka</td><td>ki</td><td>ku</td><td>ke</td><td>ko</td>
-        </tr>
-        <tr><td></td><td>さ</td><td>し</td><td>す</td><td>せ</td><td>そ</td>
-        </tr>
-        <tr><td>s-line</td><td>sa</td><td>shi</td><td>su</td><td>se</td><td>so</td>
-        </tr>
-        <tr><td></td><td>た</td><td>ち</td><td>つ</td><td>て</td><td>と</td>
-        </tr>
-        <tr><td>t-line</td><td>ta</td><td>chi</td><td>tsu</td><td>te</td><td>to</td>
-        </tr>
-        <tr><td></td><td>な</td><td>に</td><td>ぬ</td><td>ね</td><td>の</td>
-        </tr>
-        <tr><td>n-line</td><td>na</td><td>ni</td><td>nu</td><td>ne</td><td>no</td>
-        </tr>
-        <tr><td></td><td>は</td><td>ひ</td><td>ふ</td><td>へ</td><td>ほ</td>
-        </tr>
-        <tr><td>h-line</td><td>ha</td><td>hi</td><td>fu</td><td>he</td><td>ho</td>
-        </tr>
-        <tr><td></td><td>ま</td><td>み</td><td>む</td><td>め</td><td>も</td>
-        </tr>
-        <tr><td>m-line</td><td>ma</td><td>mi</td><td>mu</td><td>me</td><td>mo</td>
-        </tr>
-        <tr><td></td><td>や</td><td></td><td>ゆ</td><td></td><td>よ</td>
-        </tr>
-        <tr><td>y-line</td><td>ya</td><td></td><td>yu</td><td></td><td>yo</td>
-        </tr>
-        <tr><td></td><td>ら</td><td>り</td><td>る</td><td>れ</td><td>ろ</td>
-        </tr>
-        <tr><td>r-line</td><td>ra</td><td>ri</td><td>ru</td><td>re</td><td>ro</td>
-        </tr>
-        <tr><td></td><td>わ</td><td></td><td></td><td></td><td>を</td>
-        </tr>
-        <tr><td>w-line</td><td>wa</td><td></td><td></td><td></td><td>wo</td>
-        </tr>
-        <tr><td></td><td>ん</td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr><td></td><td>n</td><td></td><td></td><td></td><td></td>
-        </tr>
-        </table>
-
-        <h3>Dakuon and Handakuon</h3>
-        <p>Addding Dakuten (゛) to k, s, t, and h line produces new line: g, j, d, and b respectively.
-            While Handakuten(゜) is added only to h line and produces p-line.
-        </p>
-        <div class="c-text"><input type="checkbox" onclick="toggle(this, 'h-tbl-2')"> hide romaji</div>
-        <table id="h-tbl-2">
-        <tr>    <td></td><td>が</td><td>ぎ</td><td>ぐ</td><td>げ</td><td>ご</td>
-        </tr>
-        <tr><td>g-line</td><td>ga</td><td>gi</td><td>gu</td><td>ge</td><td>go</td>
-        </tr>
-        <tr><td></td><td>ざ</td><td>じ</td><td>ず</td><td>ぜ</td><td>ぞ</td>
-        </tr>
-        <tr><td>z-line</td><td>za</td><td>ji</td><td>zu</td><td>ze</td><td>zo</td>
-        </tr>
-        <tr><td></td><td>だ</td><td>ぢ</td><td>づ</td><td>で</td><td>ど</td>
-        </tr>
-        <tr><td>d-line</td><td>da</td><td>ji</td><td>zu</td><td>de</td><td>do</td>
-        </tr>
-        <tr><td></td><td>ば</td><td>び</td><td>ぶ</td><td>べ</td><td>ぼ</td>
-        </tr>
-        <tr><td>b-line</td><td>ba</td><td>bi</td><td>bu</td><td>be</td><td>bo</td>
-        </tr>
-        <tr><td></td><td>ぱ</td><td>ぴ</td><td>ぷ</td><td>ぺ</td><td>ぽ</td>
-        </tr>
-        <tr><td>p-line</td><td>pa</td><td>pi</td><td>pu</td><td>pe</td><td>po</td>
-        </tr>
-        </table>
-
-        <h3>Youon</h3>
-        <p>Adding the y-line: ゃ, ゅ or ょ to hiragana ending with 'i' vowel creates additional
-            hiraganas called youon.
-        </p>
-        <div class="c-text"><input type="checkbox" onclick="toggle(this, 'h-tbl-3')"> hide romaji</div>
-        <table id="h-tbl-3">
-        <tr><td></td><td>きゃ</td><td>きゅ</td><td>きょ</td>
-        </tr>
-        <tr><td>k-line</td><td>kya</td><td>kyu</td><td>kyo</td>
-        </tr>
-        <tr><td></td><td>しゃ</td><td>しゅ</td><td>しょ</td>
-        </tr>
-        <tr><td>s-line</td><td>sha</td><td>shu</td><td>sho</td>
-        </tr>
-        <tr><td></td><td>ちゃ</td><td>ちゅ</td><td>ちょ</td>
-        </tr>
-        <tr><td>t-line</td><td>cha</td><td>chu</td><td>cho</td>
-        </tr>
-        <tr><td></td><td>にゃ</td><td>にゅ</td><td>にょ</td>
-        </tr>
-        <tr><td>n-line</td><td>nya</td><td>nyu</td><td>nyo</td>
-        </tr>
-        <tr><td></td><td>ひゃ</td><td>ひゅ</td><td>ひょ</td>
-        </tr>
-        <tr><td>h-line</td><td>hya</td><td>hyu</td><td>hyo</td>
-        </tr>
-        <tr><td></td><td>みゃ</td><td>みゅ</td><td>みょ</td>
-        </tr>
-        <tr><td>m-line</td><td>mya</td><td>myu</td><td>myo</td>
-        </tr>
-        <tr><td></td><td>りゃ</td><td>りゅ</td><td>りょ</td>
-        </tr>
-        <tr><td>r-line</td><td>rya</td><td>ryu</td><td>ryo</td>
-        </tr>
-        </table>
-
-        <p>Additional youon are created by adding ゃ, ゅ or ょ to dakuons and handkauons similarly.
-        </p>
-        <div class="c-text"><input type="checkbox" onclick="toggle(this, 'h-tbl-4')"> hide romaji</div>
-        <table id="h-tbl-4">
-        <tr><td></td><td>ぎゃ</td><td>ぎゅ</td><td>ぎょ</td>
-        </tr>
-        <tr><td>g-line</td><td>gya</td><td>gyu</td><td>gyo</td>
-        </tr>
-        <tr><td></td><td>じゃ</td><td>じゅ</td><td>じょ</td>
-        </tr>
-        <tr><td>z-line</td><td>ja</td><td>ju</td><td>jo</td>
-        </tr>
-        <tr><td></td><td>びゃ</td><td>びゅ</td><td>びょ</td>
-        </tr>
-        <tr><td>b-line</td><td>bya</td><td>byu</td><td>byo</td>
-        </tr>
-        <tr><td></td><td>ぴゃ</td><td>ぴゅ</td><td>ぴょ</td>
-        </tr>
-        <tr><td>p-line</td><td>pya</td><td>pyu</td><td>pyo</td>
-        </tr>
-        </table>
-
-        <h2 id="katakana">Katakana</h2>
-        <p>Katakana are phonetically similar to hiragana but are written differently. Refer to
-            table below for all katakanas.
-        </p>
-        <div class="c-text"><input type="checkbox" onclick="toggle(this, 'k-tbl-1')"> hide romaji</div>
-        <table id="k-tbl-1">
-        <tr><td></td><td>ア</td><td>イ</td><td>ウ</td><td>エ</td><td>オ</td>
-        </tr>
-        <tr><td>Vowels</td><td>a</td><td>i</td><td>u</td><td>e</td><td>o</td>
-        </tr>
-        <tr><td></td><td>カ</td><td>キ</td><td>ク</td><td>ケ</td><td>コ</td>
-        </tr>
-        <tr><td>k-line</td><td>ka</td><td>ki</td><td>ku</td><td>ke</td><td>ko</td>
-        </tr>
-        <tr><td></td><td>サ</td><td>シ</td><td>ス</td><td>セ</td><td>ソ</td>
-        </tr>
-        <tr><td>s-line</td><td>sa</td><td>shi</td><td>su</td><td>se</td><td>so</td>
-        </tr>
-        <tr><td></td><td>タ</td><td>チ</td><td>ツ</td><td>テ</td><td>ト</td>
-        </tr>
-        <tr><td>t-line</td><td>ta</td><td>chi</td><td>tsu</td><td>te</td><td>to</td>
-        </tr>
-        <tr><td></td><td>ナ</td><td>ニ</td><td>ヌ</td><td>ネ</td><td>ノ</td>
-        </tr>
-        <tr><td>n-line</td><td>na</td><td>ni</td><td>nu</td><td>ne</td><td>no</td>
-        </tr>
-        <tr><td></td><td>ハ</td><td>ヒ</td><td>フ</td><td>ヘ</td><td>ホ</td>
-        </tr>
-        <tr><td>h-line</td><td>ha</td><td>hi</td><td>fu</td><td>he</td><td>ho</td>
-        </tr>
-        <tr><td></td><td>マ</td><td>ミ</td><td>ム</td><td>メ</td><td>モ</td>
-        </tr>
-        <tr><td>m-line</td><td>ma</td><td>mi</td><td>mu</td><td>me</td><td>mo</td>
-        </tr>
-        <tr><td></td><td>ヤ</td><td></td><td>ユ</td><td></td><td>ヨ</td>
-        </tr>
-        <tr><td>y-line</td><td>ya</td><td></td><td>yu</td><td></td><td>yo</td>
-        </tr>
-        <tr><td></td><td>ラ</td><td>リ</td><td>ル</td><td>レ</td><td>ロ</td>
-        </tr>
-        <tr><td>r-line</td><td>ra</td><td>ri</td><td>ru</td><td>re</td><td>ro</td>
-        </tr>
-        <tr><td></td><td>ワ</td><td></td><td></td><td></td><td>ヲ</td>
-        </tr>
-        <tr><td>w-line</td><td>wa</td><td></td><td></td><td></td><td>wo</td>
-        </tr>
-        <tr><td></td><td>ン</td><td></td><td></td><td></td><td></td>
-        </tr>
-        <tr><td></td><td>n</td><td></td><td></td><td></td><td></td>
-        </tr>
-        </table>
-
-        <h3>Dakuon and Handakuon</h3>
-        <p>Addding Dakuten (゛) to k, s, t, and h line produces new line: g, j, d, and b respectively.
-            While Handakuten(゜) is added only to h line and produces p-line.
-        </p>
-        <div class="c-text"><input type="checkbox" onclick="toggle(this, 'k-tbl-2')"> hide romaji</div>
-        <table id="k-tbl-2">
-        <tr>    <td></td><td>が</td><td>ぎ</td><td>ぐ</td><td>げ</td><td>ご</td>
-        </tr>
-        <tr><td>g-line</td><td>ga</td><td>gi</td><td>gu</td><td>ge</td><td>go</td>
-        </tr>
-        <tr><td></td><td>ざ</td><td>じ</td><td>ず</td><td>ぜ</td><td>ぞ</td>
-        </tr>
-        <tr><td>z-line</td><td>za</td><td>ji</td><td>zu</td><td>ze</td><td>zo</td>
-        </tr>
-        <tr><td></td><td>だ</td><td>ぢ</td><td>づ</td><td>で</td><td>ど</td>
-        </tr>
-        <tr><td>d-line</td><td>da</td><td>ji</td><td>zu</td><td>de</td><td>do</td>
-        </tr>
-        <tr><td></td><td>ば</td><td>び</td><td>ぶ</td><td>べ</td><td>ぼ</td>
-        </tr>
-        <tr><td>b-line</td><td>ba</td><td>bi</td><td>bu</td><td>be</td><td>bo</td>
-        </tr>
-        <tr><td></td><td>ぱ</td><td>ぴ</td><td>ぷ</td><td>ぺ</td><td>ぽ</td>
-        </tr>
-        <tr><td>p-line</td><td>pa</td><td>pi</td><td>pu</td><td>pe</td><td>po</td>
-        </tr>
-        </table>
-
-        <h3>Youon</h3>
-        <p>Adding the y-line: ゃ, ゅ or ょ to hiragana ending with 'i' vowel creates additional
-            hiraganas called youon.
-        </p>
-        <div class="c-text"><input type="checkbox" onclick="toggle(this, 'k-tbl-3')"> hide romaji</div>
-        <table id="k-tbl-3">
-        <tr><td></td><td>きゃ</td><td>きゅ</td><td>きょ</td>
-        </tr>
-        <tr><td>k-line</td><td>kya</td><td>kyu</td><td>kyo</td>
-        </tr>
-        <tr><td></td><td>しゃ</td><td>しゅ</td><td>しょ</td>
-        </tr>
-        <tr><td>s-line</td><td>sha</td><td>shu</td><td>sho</td>
-        </tr>
-        <tr><td></td><td>ちゃ</td><td>ちゅ</td><td>ちょ</td>
-        </tr>
-        <tr><td>t-line</td><td>cha</td><td>chu</td><td>cho</td>
-        </tr>
-        <tr><td></td><td>にゃ</td><td>にゅ</td><td>にょ</td>
-        </tr>
-        <tr><td>n-line</td><td>nya</td><td>nyu</td><td>nyo</td>
-        </tr>
-        <tr><td></td><td>ひゃ</td><td>ひゅ</td><td>ひょ</td>
-        </tr>
-        <tr><td>h-line</td><td>hya</td><td>hyu</td><td>hyo</td>
-        </tr>
-        <tr><td></td><td>みゃ</td><td>みゅ</td><td>みょ</td>
-        </tr>
-        <tr><td>m-line</td><td>mya</td><td>myu</td><td>myo</td>
-        </tr>
-        <tr><td></td><td>りゃ</td><td>りゅ</td><td>りょ</td>
-        </tr>
-        <tr><td>r-line</td><td>rya</td><td>ryu</td><td>ryo</td>
-        </tr>
-        </table>
-
-        <p>Additional youon are created by adding ゃ, ゅ or ょ to dakuons and handkauons similarly.
-        </p>
-        <div class="c-text"><input type="checkbox" onclick="toggle(this, 'k-tbl-4')"> hide romaji</div>
-        <table id="k-tbl-4">
-        <tr><td></td><td>ぎゃ</td><td>ぎゅ</td><td>ぎょ</td>
-        </tr>
-        <tr><td>g-line</td><td>gya</td><td>gyu</td><td>gyo</td>
-        </tr>
-        <tr><td></td><td>じゃ</td><td>じゅ</td><td>じょ</td>
-        </tr>
-        <tr><td>z-line</td><td>ja</td><td>ju</td><td>jo</td>
-        </tr>
-        <tr><td></td><td>びゃ</td><td>びゅ</td><td>びょ</td>
-        </tr>
-        <tr><td>b-line</td><td>bya</td><td>byu</td><td>byo</td>
-        </tr>
-        <tr><td></td><td>ぴゃ</td><td>ぴゅ</td><td>ぴょ</td>
-        </tr>
-        <tr><td>p-line</td><td>pya</td><td>pyu</td><td>pyo</td>
-        </tr>
-        </table>
+        <div class="container">
+            <div class="snav"></div>
+            <h1 class="c-text"   style="color: red; text-align: center;">こんにちは</h1>
+            <p>
+                Nihongo Notes is personal collection of my knowledge on Japanese language, which isn't
+                much. but I will be trying my best update the contents along the way. Feel free to
+                peruse this poorly written "website" ;).
+            </p>
+            <p>
+                Japanese alphabets are divided into three types. Hiragana, Katakana and Kanji.
+                <a href="#hiragana">Hiragana</a> are native Japanese alphabets, they don't have meaning in on themeselves
+                and are used to write native words. <a href="#katakana">Katakana</a> are phonetically similar to Hiraganas
+                but are written differently. They are used to write loan words. <a href="#kanji">Kanji</a> are characters
+                taken from the Chinese script and used in the writing of Japanese. A single kanji represents an idea/meaning as a
+                whole. They are often derived from pictures or painting of the thing they represent.
+            </p>
+            <h2 id="hiragana">Hiragana</h2>
+            <p>Hiragana consists of 46 different characters which are shown in table below. The
+                hiragana in top row are 5 vowel sound and are prononced a little different from
+                what their romaji represent:<br>
+                <ul><li>a as in "car"</li><li>i as in "ink"</li><li>u as in "super"</li>
+                    <li>e as in "ten"</li><li>o as in "rope"</li>   </ul>
+                And on the left, the consonants are listed k, s, t, n, h, m, y, r, w, n. Which together
+                mixed with the vowels gives them a sound. Note that these hiragana have to be written
+                with a certain stroke order, which I have not included because of my laziness.
+            </p>
+            <table id="h-tbl-1" class="t-main">
+                <tr><td>vowels</td><td>あ<br>a</td><td>い<br>i</td><td>う<br>u</td><td>え<br>e</td><td>お<br>o</td>
+                </tr>
+                <tr><td>k-line</td><td>か<br>ka</td><td>き<br>ki</td><td>く<br>ku</td><td>け<br>ke</td><td>こ<br>ko</td>
+                </tr>
+                <tr><td>s-line</td><td>さ<br>sa</td><td>し<br>shi</td><td>す<br>su</td><td>せ<br>se</td><td>そ<br>so</td>
+                </tr>
+                <tr><td>t-line</td><td>た<br>ta</td><td>ち<br>chi</td><td>つ<br>tsu</td><td>て<br>te</td><td>と<br>to</td>
+                </tr>
+                <tr><td>n-line</td><td>な<br>na</td><td>に<br>ni</td><td>ぬ<br>nu</td><td>ね<br>ne</td><td>の<br>no</td>
+                </tr>
+                <tr><td>h-line</td><td>は<br>ha</td><td>ひ<br>hi</td><td>ふ<br>fu</td><td>へ<br>he</td><td>ほ<br>ho</td>
+                </tr>
+                <tr><td>m-line</td><td>ま<br>ma</td><td>み<br>mi</td><td>む<br>mu</td><td>め<br>me</td><td>も<br>mo</td>
+                </tr>
+                <tr><td>y-line</td><td>や<br>ya</td><td></td><td>ゆ<br>yu</td><td></td><td>よ<br>yo</td>
+                </tr>
+                <tr><td>r-line</td><td>ら<br>ra</td><td>り<br>ri</td><td>る<br>ru</td><td>れ<br>re</td><td>ろ<br>ro</td>
+                </tr>
+                <tr><td>w-line</td><td>わ<br>wa</td><td></td><td></td><td></td><td>を<br>wo</td>
+                </tr>
+                <tr><td></td><td>ん<br>n</td><td></td><td></td><td></td><td></td>
+                </tr>
+            </table>
+            <h3>Dakuon and Handakuon</h3>
+            <p>Addding Dakuten (゛) to k, s, t, and h line produces new line: g, j, d, and b respectively.
+                While Handakuten(゜) is added only to h line and produces p-line.
+            </p>
+            <table id="h-tbl-2" class="t-main">
+                <tr><td>g-line</td><td>が<br>ga</td><td>ぎ<br>gi</td><td>ぐ<br>gu</td><td>げ<br>ge</td><td>ご<br>go</td>
+                </tr>
+                <tr><td>z-line</td><td>ざ<br>za</td><td>じ<br>ji</td><td>ず<br>zu</td><td>ぜ<br>ze</td><td>ぞ<br>zo</td>
+                </tr>
+                <tr><td>d-line</td><td>だ<br>da</td><td>ぢ<br>ji</td><td>づ<br>zu</td><td>で<br>de</td><td>ど<br>do</td>
+                </tr>
+                <tr><td>b-line</td><td>ば<br>ba</td><td>び<br>bi</td><td>ぶ<br>bu</td><td>べ<br>be</td><td>ぼ<br>bo</td>
+                </tr>
+                <tr><td>p-line</td><td>ぱ<br>pa</td><td>ぴ<br>pi</td><td>ぷ<br>pu</td><td>ぺ<br>pe</td><td>ぽ<br>po</td>
+                </tr>
+            </table>
+            <h3>Youon</h3>
+            <p>Adding the y-line: ゃ, ゅ or ょ to hiragana ending with 'i' vowel creates additional
+                hiraganas called youon.
+            </p>
+            <table id="h-tbl-3" class="t-main">
+                <tr><td>k-line</td><td>きゃ<br>kya</td><td>きゅ<br>kyu</td><td>きょ<br>kyo</td>
+                </tr>
+                <tr><td>s-line</td><td>しゃ<br>sha</td><td>しゅ<br>shu</td><td>しょ<br>sho</td>
+                </tr>
+                <tr><td>t-line</td><td>ちゃ<br>cha</td><td>ちゅ<br>chu</td><td>ちょ<br>cho</td>
+                </tr>
+                <tr><td>n-line</td><td>にゃ<br>nya</td><td>にゅ<br>nyu</td><td>にょ<br>nyo</td>
+                </tr>
+                <tr><td>h-line</td><td>ひゃ<br>hya</td><td>ひゅ<br>hyu</td><td>ひょ<br>hyo</td>
+                </tr>
+                <tr><td>m-line</td><td>みゃ<br>mya</td><td>みゅ<br>myu</td><td>みょ<br>myo</td>
+                </tr>
+                <tr><td>r-line</td><td>りゃ<br>rya</td><td>りゅ<br>ryu</td><td>りょ<br>ryo</td>
+                </tr>
+            </table>
+            <p>Additional youon are created by adding ゃ, ゅ or ょ to dakuons and handkauons similarly.
+            </p>
+            <table id="h-tbl-4" class="t-main">
+                <tr><td>g-line</td><td>ぎゃ<br>gya</td><td>ぎゅ<br>gyu</td><td>ぎょ<br>gyo</td>
+                </tr>
+                <tr><td>z-line</td><td>じゃ<br>ja</td><td>じゅ<br>ju</td><td>じょ<br>jo</td>
+                </tr>
+                <tr><td>b-line</td><td>びゃ<br>bya</td><td>びゅ<br>byu</td><td>びょ<br>byo</td>
+                </tr>
+                <tr><td>p-line</td><td>ぴゃ<br>pya</td><td>ぴゅ<br>pyu</td><td>ぴょ<br>pyo</td>
+                </tr>
+            </table>
+            <h2 id="katakana">Katakana</h2>
+            <p>Katakana are phonetically similar to hiragana but are written differently. Refer to
+                table below for all katakanas.
+            </p>
+            <table id="k-tbl-1" class="t-main">
+                <tr><td>vowels</td><td>ア<br>a</td><td>イ<br>i</td><td>ウ<br>u</td><td>エ<br>e</td><td>オ<br>o</td>
+                </tr>
+                <tr><td>k-line</td><td>カ<br>ka</td><td>キ<br>ki</td><td>ク<br>ku</td><td>ケ<br>ke</td><td>コ<br>ko</td>
+                </tr>
+                <tr><td>s-line</td><td>サ<br>sa</td><td>シ<br>shi</td><td>ス<br>su</td><td>セ<br>se</td><td>ソ<br>so</td>
+                </tr>
+                <tr><td>t-line</td><td>タ<br>ta</td><td>チ<br>chi</td><td>ツ<br>tsu</td><td>テ<br>te</td><td>ト<br>to</td>
+                </tr>
+                <tr><td>n-line</td><td>ナ<br>na</td><td>ニ<br>ni</td><td>ヌ<br>nu</td><td>ネ<br>ne</td><td>ノ<br>no</td>
+                </tr>
+                <tr><td>h-line</td><td>ハ<br>ha</td><td>ヒ<br>hi</td><td>フ<br>fu</td><td>ヘ<br>he</td><td>ホ<br>ho</td>
+                </tr>
+                <tr><td>m-line</td><td>マ<br>ma</td><td>ミ<br>mi</td><td>ム<br>mu</td><td>メ<br>me</td><td>モ<br>mo</td>
+                </tr>
+                <tr><td>y-line</td><td>ヤ<br>ya</td><td></td><td>ユ<br>yu</td><td></td><td>ヨ<br>yo</td>
+                </tr>
+                <tr><td>r-line</td><td>ラ<br>ra</td><td>リ<br>ri</td><td>ル<br>ru</td><td>レ<br>re</td><td>ロ<br>ro</td>
+                </tr>
+                <tr><td>w-line</td><td>ワ<br>wa</td><td></td><td></td><td></td><td>ヲ<br>wo</td>
+                </tr>
+                <tr><td></td><td>ン<br>n</td><td></td><td></td><td></td><td></td>
+                </tr>
+            </table>
+            <h3>Dakuon and Handakuon</h3>
+            <p>Addding Dakuten ( ゛) to k, s, t, and h line produces new line: g, j, d, and b respectively.
+                While Handakuten( ゜) is added only to h line and produces p-line.
+            </p>
+            <table id="k-tbl-2" class="t-main">
+                <tr><td>g-line</td><td>ガ<br>ga</td><td>ギ<br>gi</td><td>グ<br>gu</td><td>ゲ<br>ge</td><td>ゴ<br>go</td>
+                </tr>
+                <tr><td>z-line</td><td>ザ<br>za</td><td>ジ<br>ji</td><td>ズ<br>zu</td><td>ゼ<br>ze</td><td>ゾ<br>zo</td>
+                </tr>
+                <tr><td>d-line</td><td>ダ<br>da</td><td>ヂ<br>ji</td><td>ヅ<br>zu</td><td>デ<br>de</td><td>ド<br>do</td>
+                </tr>
+                <tr><td>b-line</td><td>バ<br>ba</td><td>ビ<br>bi</td><td>ブ<br>bu</td><td>ベ<br>be</td><td>ボ<br>bo</td>
+                </tr>
+                <tr><td>p-line</td><td>パ<br>pa</td><td>ピ<br>pi</td><td>プ<br>pu</td><td>ペ<br>pe</td><td>ポ<br>po</td>
+                </tr>
+            </table>
+            <h3>Youon</h3>
+            <p>Adding the y-line: ゃ, ゅ or ょ to hiragana ending with 'i' vowel creates additional
+                hiraganas called youon.
+            </p>
+            <table id="k-tbl-3" class="t-main">
+                <tr><td>k-line</td><td>キャ<br>kya</td><td>キュ<br>kyu</td><td>キョ<br>kyo</td>
+                </tr>
+                <tr><td>s-line</td><td>シャ<br>sha</td><td>シュ<br>shu</td><td>ショ<br>sho</td>
+                </tr>
+                <tr><td>t-line</td><td>チャ<br>cha</td><td>チュ<br>chu</td><td>チョ<br>cho</td>
+                </tr>
+                <tr><td>n-line</td><td>ニャ<br>nya</td><td>ニュ<br>nyu</td><td>ニョ<br>nyo</td>
+                </tr>
+                <tr><td>h-line</td><td>ヒャ<br>hya</td><td>ヒュ<br>hyu</td><td>ヒョ<br>hyo</td>
+                </tr>
+                <tr><td>m-line</td><td>ミャ<br>mya</td><td>ミュ<br>myu</td><td>ミョ<br>myo</td>
+                </tr>
+                <tr><td>r-line</td><td>リャ<br>rya</td><td>リュ<br>ryu</td><td>リョ<br>ryo</td>
+                </tr>
+            </table>
+            <p>Additional youon are created by adding ゃ, ゅ or ょ to dakuons and handkauons similarly.
+            </p>
+            <table id="k-tbl-4" class="t-main">
+                <tr><td>g-line</td><td>ギャ<br>gya</td><td>ギュ<br>gyu</td><td>ギョ<br>gyo</td>
+                </tr>
+                <tr><td>z-line</td><td>ジャ<br>ja</td><td>ジュ<br>ju</td><td>ジョ<br>jo</td>
+                </tr>
+                <tr><td>b-line</td><td>ビャ<br>bya</td><td>ビュ<br>byu</td><td>ビョ<br>byo</td>
+                </tr>
+                <tr><td>p-line</td><td>ピャ<br>pya</td><td>ピュ<br>pyu</td><td>ピョ<br>pyo</td>
+                </tr>
+            </table>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
