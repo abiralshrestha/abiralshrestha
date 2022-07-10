@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 body {
     text-align: justify;
     margin: 0;
@@ -6,9 +11,19 @@ body {
     background: #ffdedeb0;
 }
 
-.c-link {
-    color: black;
+a{
     text-decoration: none;
+}
+
+th{
+    padding: 8px;
+}
+
+.list{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    list-style: none;
 }
 
 .text-warn{
@@ -42,7 +57,7 @@ body {
 }
 
 .t-main td{
-    padding: 3px;
+    padding: 8px;
 }
 
 .t-main tr:nth-child(2n+1){
@@ -51,6 +66,18 @@ body {
 
 .calendar{
     width: 80%;
+}
+
+.t-vocab{
+    text-align: left;
+}
+
+.t-num{
+    width: 80%;
+}
+
+.t-vocab tr td:nth-child(0n+1){
+    color: rgb(39, 126, 42);
 }
 
 /* Navbar */
@@ -66,7 +93,7 @@ body {
 
 .nav :nth-child(n) {
     margin: auto;
-    text-decoration: none;
+    cursor: pointer;
     color: white;
     padding: 10px 5px;
 }
@@ -93,12 +120,18 @@ body {
 
 .dropdown-content a{
     color: black !important;
-    text-decoration: none;
     display: block;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
     display: block;
+}
+
+.go-top{
+    position: fixed;
+    top: 90%;
+    left: 85%;
+    opacity: 0.6;
 }
 
 /* Responsive */
@@ -138,5 +171,9 @@ body {
     }
     .overflow{
         left: -30px;
+    }
+    .go-top{
+        top: 94%;
+        left: 88%;
     }
 }
