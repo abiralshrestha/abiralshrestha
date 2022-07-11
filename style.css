@@ -11,12 +11,12 @@ body {
     background: #ffdedeb0;
 }
 
-a{
-    text-decoration: none;
-}
-
 th{
     padding: 8px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .list{
@@ -38,6 +38,7 @@ th{
     width: 50%;
     margin: 0 auto;
     background: #ffffff9f;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px -5px, rgba(0, 0, 0, 0.3) 0px 0px 20px -5px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .container{
@@ -62,13 +63,20 @@ th{
 
 .t-main tr:nth-child(2n+1){
     background:rgba(222, 222, 222, 0.639);
+    border: 1px;
 }
 
 .calendar{
     width: 80%;
 }
 
+.calendar tr td{
+    padding: 20px;
+    border: 1px groove;
+}
+
 .t-vocab{
+    width: 90%;
     text-align: left;
 }
 
@@ -76,8 +84,59 @@ th{
     width: 80%;
 }
 
-.t-vocab tr td:nth-child(0n+1){
-    color: rgb(39, 126, 42);
+.t-num tr td:nth-child(2n+1){
+    background-color: #ffffff49;
+}
+
+.card{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.536);
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 0 12px rgba(128, 128, 128, 0.536);
+}
+
+.kanji{
+    width: fit-content;
+}
+
+.kanji table{
+    border-spacing: 15px;
+}
+
+.big{
+    padding: 0 8px;
+    color: red;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    font-size: 60px;
+}
+
+.kun{
+    color: blue;
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+.on{
+    color: green;
+    text-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
+}
+
+.line{
+    display: grid;
+    grid-template-columns:  18% 18% 64%;
+}
+
+.line div{
+    padding: 5px;
+}
+
+.usage .line:nth-child(2n+1){
+    background-color: #d0c9c93b;
+    border-radius: 5px;
 }
 
 /* Navbar */
@@ -157,23 +216,60 @@ th{
     .calendar{
         width: 85%;
     }
+    .usage{
+        grid-template-columns: 20% 20% 60%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    .nav{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
     .main-container {
         width: 100%;
     }
     .t-main{
-        width: 80%;
+        width: 90%;
+    }
+    .t-vocab tr td:nth-child(2n+1){
+        width: 40%;
+    }
+    .line{
+        grid-template-columns: 30% auto;
+    }
+    .u-3{
+        grid-column: 1/4;
     }
     .calendar{
         width: 95%;
     }
-    .overflow{
-        left: -30px;
-    }
     .go-top{
-        top: 94%;
+        top: 92%;
         left: 88%;
+    }
+    .main-container{
+        box-shadow: none;
+    }
+}
+
+@media print {
+    .nav, .go-top{
+        display: none;
+    }
+    .main-container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-shadow: none;
+        text-shadow: none;
+    }
+    .container{
+        background-color: white;
+        box-shadow: none;
+        text-shadow: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 }

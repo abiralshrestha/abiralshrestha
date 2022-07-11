@@ -1,0 +1,29 @@
+<div class="card">4.
+    <div class="kanji">
+        <table>
+            <tr>
+                <td rowspan="3" class="big"></td>
+            </tr>
+            <tr>
+                <td class="kun"></td>
+            </tr>
+            <tr>
+                <td class="on"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="usage">
+        <div class="u-1">⨀　</div>
+        <div class="u-1"></div>
+        <div class="u-2"></div>
+        <div class="u-1">⨀　</div>
+        <div class="u-1"></div>
+        <div class="u-2"></div>
+        <div class="u-1">⨀　</div>
+        <div class="u-1"></div>
+        <div class="u-2"></div>
+        <div class="u-1">⨀　</div>
+        <div class="u-1"></div>
+        <div class="u-2"></div>
+    </div>
+</div>
