@@ -1,6 +1,19 @@
+.yotsuba img{
+    width: 50%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0.2;
+}
+
 html{
     scroll-behavior: smooth;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
 }
 
 body {
@@ -18,14 +31,6 @@ th{
 a{
     text-decoration: none;
 }
-
-.list{
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    list-style: none;
-}
-
 .text-warn{
     color: red;
 }
@@ -35,6 +40,7 @@ a{
 }
 
 .main-container {
+    min-height: 100%;
     width: 50%;
     margin: 0 auto;
     background: #ffffff9f;
@@ -46,6 +52,11 @@ a{
     padding: 10px;
 }
 
+.img{
+    margin: 60px auto 0 auto;
+    width: fit-content;
+}
+
 /* table */
 .t-main{
     border-radius: 10px;
@@ -53,7 +64,7 @@ a{
     background: white;
     text-align: center;
     width: 60%;
-    margin: 15px auto;
+    margin: 20px auto;
     border-spacing: 0;
 }
 
@@ -70,6 +81,11 @@ a{
     width: 80%;
 }
 
+.calendar tr th{
+    color: red;
+    font-weight: 600;
+}
+
 .calendar tr td{
     padding: 20px;
     border: 1px groove;
@@ -78,6 +94,10 @@ a{
 .t-vocab{
     width: 90%;
     text-align: left;
+}
+
+.t-vocab tr td:nth-child(2n+1){
+    width: 40%;
 }
 
 .t-num{
@@ -91,10 +111,10 @@ a{
 .card{
     width: 95%;
     padding: 10px;
-    border: 1px solid rgba(128, 128, 128, 0.536);
+    /* border: 1px solid rgba(128, 128, 128, 0.536); */
     border-radius: 15px;
     margin: 20px auto;
-    box-shadow: 0 0 12px rgba(128, 128, 128, 0.536);
+    /* box-shadow: 0 0 12px rgba(180, 180, 180, 0.4); */
 }
 
 .kanji{
@@ -107,27 +127,40 @@ a{
 
 .big{
     padding: 0 8px;
-    color: red;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-    box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
-    border: 1px solid rgba(128, 128, 128, 0.5);
+    color: rgba(255, 0, 0, 0.649);
+    text-shadow: 0 0 5px rgba(216, 146, 146, 0.9);
+    /* box-shadow: 0 0 5px rgba(123, 123, 123, 0.5) inset; */
+    /* border: 1px solid rgba(128, 128, 128, 0.5); */
     border-radius: 5px;
-    font-size: 60px;
+    font-size: 80px;
+}
+
+.on, .kun{
+    padding: 8px;
+    /* color: white; */
+    border-radius: 8px;
 }
 
 .kun{
-    color: blue;
-    text-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+    background-color: #2c9b5741;
+    
 }
 
 .on{
-    color: green;
-    text-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
+    background-color: rgba(73, 103, 239, 0.501);
 }
 
 .line{
     display: grid;
     grid-template-columns:  18% 18% 64%;
+}
+
+.u-1,.u-2{
+    font-weight: bold;
+}
+
+.u-3{
+    padding: 10px !important;
 }
 
 .line div{
@@ -142,7 +175,7 @@ a{
 /* Navbar */
 .nav {
     top: 0;
-    position: sticky;
+    /* position: sticky; */
     display: flex;
     width: 100%;
     border-radius: 0 0 10px 10px;
@@ -158,7 +191,7 @@ a{
 }
 
 .snav {
-    height: 150px;
+    height: 120px;
 }
 
 .dropdown {
@@ -186,6 +219,12 @@ a{
     display: block;
 }
 
+.dropdown:hover .more{
+    left: -65%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 3fr))
+}
+
 .go-top{
     position: fixed;
     top: 90%;
@@ -195,7 +234,7 @@ a{
 
 /* Responsive */
 @media only screen and (max-width: 1000px) {
-    .main-container {
+    .main-container, .yotsuba img {
         width: 80%;
     }
     .t-main{
@@ -207,7 +246,7 @@ a{
 }
 
 @media only screen and (max-width: 800px) {
-    .main-container {
+    .main-container, .yotsuba img {
         width: 90%;
     }
     .t-main{
@@ -228,12 +267,13 @@ a{
     }
     .main-container {
         width: 100%;
+        box-shadow: none;
+    }
+    .yotsuba img{
+        width: 100%;
     }
     .t-main{
         width: 90%;
-    }
-    .t-vocab tr td:nth-child(2n+1){
-        width: 40%;
     }
     .line{
         grid-template-columns: 30% auto;
@@ -248,9 +288,7 @@ a{
         top: 92%;
         left: 88%;
     }
-    .main-container{
-        box-shadow: none;
-    }
+    
 }
 
 @media print {
