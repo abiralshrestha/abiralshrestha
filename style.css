@@ -1,4 +1,6 @@
 .yotsuba img{
+    height: 100%;
+    min-height: 100vh;
     width: 50%;
     position:fixed;
     top: 0;
@@ -6,6 +8,9 @@
     right: 0;
     margin: 0 auto;
     opacity: 0.2;
+    object-position: top;
+    object-fit: cover;
+    z-index: -3;
 }
 
 html{
@@ -14,12 +19,14 @@ html{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
     height: 100%;
+    min-height: 100vh;
 }
 
 body {
     text-align: justify;
     margin: 0;
     height: 100%;
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background: #ffdedeb0;
 }
@@ -43,7 +50,7 @@ a{
     min-height: 100%;
     width: 50%;
     margin: 0 auto;
-    background: #ffffff9f;
+    background: #ffffff65;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px -5px, rgba(0, 0, 0, 0.3) 0px 0px 20px -5px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -73,7 +80,7 @@ a{
 }
 
 .t-main tr:nth-child(2n+1){
-    background:rgba(222, 222, 222, 0.639);
+    background:rgba(222, 222, 222, 0.6);
     border: 1px;
 }
 
@@ -227,8 +234,8 @@ a{
 
 .go-top{
     position: fixed;
-    top: 90%;
-    left: 85%;
+    top: 90vh;
+    left: 85vw;
     opacity: 0.6;
 }
 
@@ -285,8 +292,8 @@ a{
         width: 95%;
     }
     .go-top{
-        top: 92%;
-        left: 88%;
+        bottom: 25%;
+        right: 0;
     }
     
 }
