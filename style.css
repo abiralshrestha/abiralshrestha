@@ -61,7 +61,7 @@ a{
 
 .img{
     margin: 60px auto 0 auto;
-    width: fit-content;
+    width: max-content;
 }
 
 /* table */
@@ -135,7 +135,7 @@ a{
 }
 
 .kanji{
-    width: fit-content;
+    width: max-content;
 }
 
 .kanji table{
@@ -244,8 +244,8 @@ a{
 
 .go-top{
     position: fixed;
-    top: 90vh;
-    left: 85vw;
+    bottom: 1vw;
+    right: 18vw;
     opacity: 0.6;
 }
 
@@ -290,7 +290,7 @@ a{
         width: 100%;
     }
     .t-main{
-        width: 90%;
+        width: 95%;
     }
     .line{
         grid-template-columns: 30% auto;
@@ -302,10 +302,9 @@ a{
         width: 95%;
     }
     .go-top{
-        bottom: 25%;
-        right: 0;
+        bottom: 1vw;
+        right: 1vw;
     }
-    
 }
 
 @media print {
