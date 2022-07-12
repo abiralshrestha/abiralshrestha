@@ -84,6 +84,11 @@ a{
     border: 1px;
 }
 
+/* .t-main tr :nth-child(2n+2){
+    background:rgba(222, 222, 222, 0.3);
+    border: 1px;
+} */
+
 .calendar{
     width: 80%;
 }
@@ -103,8 +108,13 @@ a{
     text-align: left;
 }
 
-.t-vocab tr td:nth-child(2n+1){
-    width: 40%;
+/* .t-vocab tr td:nth-child(2n+1){
+    width: 30%;
+} */
+
+.t-vocab tr{
+    display: grid;
+    grid-template-columns: 25% 20% 55%;
 }
 
 .t-num{
