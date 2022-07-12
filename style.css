@@ -114,7 +114,7 @@ a{
 
 .t-vocab tr{
     display: grid;
-    grid-template-columns: 25% 20% 55%;
+    grid-template-columns: 25% 25% 50%;
 }
 
 .t-num{
